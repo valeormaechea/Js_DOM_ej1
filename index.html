@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Maria Valentina Ormaechea" />
-    <!-- CSS only -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -16,6 +15,37 @@
     <title>Práctico DOM y BOM - Ejercicio 1</title>
   </head>
   <body>
+    <header class="container py-5">
+      <h1 class="text-light display-1 text-center">Numeros mágicos</h1>
+      <hr class="text-light" />
+    </header>
+    <main class="container">
+      <section class="text-center">
+        <button class="btn btn-light">Iniciar juego</button>
+        <form class="my-5 bg-light rounded p-3">
+          <div class="mb-3">
+            <label for="inputNro" class="form-label mb-3 d-block text-start"
+              >Ingrese un numero del 1 al 100</label
+            >
+            <div class="d-flex">
+              <input
+                type="number"
+                placeholder="Ingrese un numero"
+                class="form-control"
+                id="inputNro"
+              />
+              <button class="btn btn-dark ms-2" type="submit">Enviar</button>
+            </div>
+          </div>
+        </form>
+        <div class="alert alert-success" role="alert">
+          <p class="my-0">Adivinaste!</p>
+        </div>
+      </section>
+    </main>
+    <footer class="bg-dark text-center text-light py-4">
+      <p class="my-0">&copy; Todos los derechos reservados</p>
+    </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
