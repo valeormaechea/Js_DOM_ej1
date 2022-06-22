@@ -21,7 +21,9 @@
     </header>
     <main class="container">
       <section class="text-center">
-        <button class="btn btn-light">Iniciar juego</button>
+        <button class="btn btn-light" onclick="iniciarJuego()">
+          Iniciar juego
+        </button>
         <form class="my-5 bg-light rounded p-3">
           <div class="mb-3">
             <label for="inputNro" class="form-label mb-3 d-block text-start"
@@ -34,13 +36,21 @@
                 class="form-control"
                 id="inputNro"
               />
-              <button class="btn btn-dark ms-2" type="submit">Enviar</button>
+              <button
+                class="btn btn-dark ms-2"
+                type="button"
+                onclick="consultarNumero()"
+              >
+                Enviar
+              </button>
             </div>
           </div>
         </form>
-        <div class="alert alert-success" role="alert">
-          <p class="my-0">Adivinaste!</p>
-        </div>
+        <div
+          class="d-none"
+          role="alert"
+          id="alertAdivinanza"
+        ></div>
       </section>
     </main>
     <footer class="bg-dark text-center text-light py-4">
@@ -51,5 +61,6 @@
       integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
       crossorigin="anonymous"
     ></script>
+    <script src="js/app.js"></script>
   </body>
 </html>
